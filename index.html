@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de médias</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,16 +19,21 @@
         <img src="images/logo.png" alt="capelo e diploma" />
         <h1>Calculadora de médias</h1>
       </header>
-      <form action="#">
-        <input type="text" required placeholder="Nome da atividade" />
+      <form action="#" id="formAtividade">
+        <input
+          type="text"
+          id="nomeAtividade"
+          required
+          placeholder="Nome da atividade"
+        />
         <input
           type="number"
+          id="notaAtividade"
           required
           placeholder="Nota da atividade"
           min="0"
           max="10"
         />
-        <link rel="stylesheet" href="style.css" />
         <button type="submit">Adicionar +</button>
       </form>
       <table cellspacing="0">
@@ -39,13 +45,7 @@
             <th>Aprovado?</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Atividade 1</td>
-            <td>7</td>
-            <td><img src="images/aprovado.png" alt="Emoji festejando" /></td>
-          </tr>
-        </tbody>
+        <tbody></tbody>
         <tfoot>
           <tr>
             <td>Média final</td>
@@ -55,5 +55,6 @@
         </tfoot>
       </table>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
